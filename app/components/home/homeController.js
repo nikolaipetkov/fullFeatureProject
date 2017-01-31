@@ -12,13 +12,7 @@ angular.module('homeModule', ['getTranslations'])
 	//$scope.image = "https://www.google.com/images/srpr/logo11w.png";
 
 //Initial Movies
-	$scope.movies = [
-		{
-			name: 'Avatar',
-			year: '2009',
-			poster: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg'
-		}
-	]
+	$scope.movies = [];
 
 	$scope.movie = {};
 	$scope.movie.name = '';
