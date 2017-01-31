@@ -7,7 +7,7 @@ angular.module('homeModule', ['getTranslations'])
 		$scope.clock = Date.now();
 	}
 	tick();
-	$interval(tick, 1000);
+	$interval(tick, 2000);
 
 	//$scope.image = "https://www.google.com/images/srpr/logo11w.png";
 
