@@ -7,7 +7,8 @@ var myApp = angular.module('myApp', [
   'registerModule',
   'formModule',
   'getTranslations',
-  'getMovieService'
+  'getMovieService',
+  'newMovieService'
 ]);
 
 myApp.config(function($stateProvider, $locationProvider, $urlRouterProvider, $sceProvider) {
