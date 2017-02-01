@@ -30,9 +30,9 @@
 <body>
 
     <div class="container">
-      <a ui-sref="form.name" ui-sref-active="active">Form</a>
       <a ui-sref="home" ui-sref-active="active" >Home</a>
       <a ui-sref="register" ui-sref-active="active">Register</a>
+      <a ui-sref="login" ui-sref-active="active">Login</a>
       <div ui-view></div>
     </div>
   
@@ -44,10 +44,11 @@
   <script src="app.js"></script>
   <script src="components/home/homeController.js"></script>
   <script src="components/register/registerController.js"></script>
-  <script src="components/form/formController.js"></script>
   <script src="services/getTranslations.js"></script>
-  <script src="services/getTrans.js"></script>
-  
+  <script src="components/login/LoginController.js"></script>
+  <script src="components/login/loginService.js"></script>
+  <script src="components/login/loginDirective.js"></script>
+
   <!-- config and services include -->
   <script src="app.config.js"></script> 
   <script src="services/register.js"></script>

@@ -5,10 +5,10 @@ var myApp = angular.module('myApp', [
   'ui.validate',
   'homeModule',
   'registerModule',
-  'formModule',
   'getTranslations',
   'getMovieService',
-  'newMovieService'
+  'newMovieService',
+  'LoginModule'
 ]);
 
 myApp.config(function($stateProvider, $locationProvider, $urlRouterProvider, $sceProvider) {
@@ -26,26 +26,12 @@ myApp.config(function($stateProvider, $locationProvider, $urlRouterProvider, $sc
     controller: 'RegisterController'
   });
 
-  $stateProvider.state('form', {
-    url: '/form',
-    templateUrl: 'components/form/form.html',
-    controller: 'formController2'
+  $stateProvider.state('login', {
+    url: '/login',
+    templateUrl: 'components/login/login.html',
+    controller: 'LoginController'
   });
 
-  $stateProvider.state('form.name', {
-    url: '/formName',
-    templateUrl: 'components/formName/form-name.html'   
-  });
-
-  $stateProvider.state('form.profile', {
-    url: '/formProfile',
-    templateUrl: 'components/formProfile/form-profile.html'    
-  });
-
-  $stateProvider.state('form.city', {
-    url: '/formCity',
-    templateUrl: 'components/formCity/form-city.html'   
-  });
 
   $urlRouterProvider.otherwise('/home');
 });
